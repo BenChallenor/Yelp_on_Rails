@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'restaurant/index'
 
+  get 'restaurant/new'
+
   resources :restaurants
 
   root 'restaurant#index'
