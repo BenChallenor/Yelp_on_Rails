@@ -1,0 +1,16 @@
+
+<%= form_with scope: :review, url: reviews_path, local: true do |form| %>
+  <p>
+    <%= form.label :rating %><br>
+    <%= form.number_field :rating %>
+  </p>
+
+  <p>
+    <%= form.label :comment %><br>
+    <%= form.text_area :comment %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
