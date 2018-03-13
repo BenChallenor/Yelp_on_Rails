@@ -9,7 +9,7 @@ require 'rails_helper'
 
 describe "Testing infrastructure" do
   scenario "App loads and content is displayed" do
-    visit("/restaurant/index")
+    visit("/restaurants")
     expect(page).to have_content("Restaurant listings")
   end
 end
