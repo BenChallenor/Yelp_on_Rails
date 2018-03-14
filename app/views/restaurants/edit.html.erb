@@ -1,33 +1,5 @@
 <h1>Edit a restaurant</h1>
 
-<%= form_with(model: @restaurant) do |form| %>
-
-<% if @restaurant.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        Oopps! There are <%= pluralize(@restaurant.errors.count, "error") %>! Please address the following:
-      </h2>
-      <ul>
-        <% @restaurant.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-<p>
-  <%= form.label :name %><br>
-  <%= form.text_field :name %><br>
-</p>
-
-<p>
-  <%= form.label :description %><br>
-  <%= form.text_field :description %><br>
-</p>
-
-<p>
-<%=form.submit%>
-</p>
-<%end%>
+<%= render 'form' %>
 
 <%= link_to "Back to restaurant listings", restaurants_path%>
