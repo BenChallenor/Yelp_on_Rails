@@ -16,7 +16,7 @@
       <tr>
         <td><%= review.rating %></td>
         <td><%= review.comment %></td>
-        <td><%= link_to 'Show', review_path(review) %></td>
+        <td><%= link_to 'Show', restaurant_review_path(1, review) %></td>
       </tr>
       <% end %>
     </table>
