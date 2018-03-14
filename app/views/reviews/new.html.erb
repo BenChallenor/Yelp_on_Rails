@@ -1,5 +1,5 @@
 
-<%= form_with scope: :review, url: reviews_path, local: true do |form| %>
+<%= form_with scope: :review, url: restaurant_reviews_path, local: true do |form| %>
   <p>
     <%= form.label :rating %><br>
     <%= form.number_field :rating %>
