@@ -2,8 +2,8 @@
 
 <%= render 'form' %>
 
-<p><%= link_to "Delete restaurant", restaurant_path(@restaurant),
+<p> <div id="delete"><%= link_to "Delete restaurant", restaurant_path(@restaurant),
           method: :delete,
           data: { confirm: "Are you sure?" } %>
 
-<p><%= link_to "Back to restaurant listings", restaurants_path%>
+<p><%= link_to "Back to restaurant listings", restaurants_path%></div>
