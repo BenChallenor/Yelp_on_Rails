@@ -2,9 +2,15 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
-    @reviews = Review.where(restaurant_id: "#{params[:id]}")
-    p @reviews
+    @reviews = @restaurant.reviews
+    # p 'reviews'
+    # p @reviews
+    # p params
+    # p @restaurant
   end
+
+  # Person.where(name: 'Spartacus', rating: 4)
+
 
   def index
     @restaurants = Restaurant.all
