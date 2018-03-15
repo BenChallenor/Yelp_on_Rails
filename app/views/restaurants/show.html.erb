@@ -9,6 +9,22 @@
 </p>
 
 <p><%= link_to "Edit or delete restaurant", edit_restaurant_path(@restaurant)%></p>
+<p><%= link_to "Add Review", new_restaurant_review_path(@restaurant)%></p>
+
+<table>
+  <tr>
+    <th>Rating</th>
+    <th>comment</th>
+  </tr>
+
+  <% @reviews.each do |review| %>
+  <tr>
+    <td><%= review.rating %></td>
+    <td><%= review.comment %></td>
+    <td><%= link_to 'Show', restaurant_review_path(@restaurant, review) %></td>
+  </tr>
+  <% end %>
+</table>
 
 <p><%= link_to "Back to restaurant listings", restaurants_path%></p>
 </div>
