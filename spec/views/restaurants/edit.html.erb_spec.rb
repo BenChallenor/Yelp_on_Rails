@@ -1,7 +1,7 @@
 feature 'Editing a restaurant' do
   scenario 'User can edit a restaurant on restaurant page' do
     add_restaurant
-    click_on('Edit restaurant')
+    click_on('Edit or delete restaurant')
     test_restaurant
     click_button('Update Restaurant')
     click_on('Back to restaurant listings')

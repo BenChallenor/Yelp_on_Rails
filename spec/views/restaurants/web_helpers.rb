@@ -1,8 +1,8 @@
 def add_restaurant
-visit('/restaurants/new')
-fill_in 'restaurant[name]', with: 'Flat iron'
-fill_in 'restaurant[description]', with: 'Steak house'
-click_button 'Create Restaurant'
+  visit('/restaurants/new')
+  fill_in 'restaurant[name]', with: 'Flat iron'
+  fill_in 'restaurant[description]', with: 'Steak house'
+  click_button 'Create Restaurant'
 end
 
 def test_restaurant
