@@ -2,6 +2,8 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    @reviews = Review.where(restaurant_id: "#{params[:id]}")
+    p @reviews
   end
 
   def index
@@ -16,7 +18,7 @@ class RestaurantsController < ApplicationController
     @restaurant.save
     redirect_to @restaurant
   end
-  
+
   private
   def restaurant_params
     params.require(:restaurant).permit(:name, :description)
