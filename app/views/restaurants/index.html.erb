@@ -1,8 +1,9 @@
 <h1>Yelp</h1>
 
-<h1>Restaurant listings</h1>
+<h2>Restaurant listings</h2>
 <p><%= link_to "Add a restaurant", new_restaurant_path %></p>
-<table> 
+
+<table>
 <tr>
   <th>Name</th>
   <th>Description</th>
@@ -10,8 +11,11 @@
 
 <% @restaurants.each do |restaurant| %>
 <tr>
+  <!-- <div class="listings"> -->
+
   <td><%= restaurant.name %></td>
   <td><%= restaurant.description %></td>
+<!-- </div> -->
   <td><%= link_to "Show", restaurant_path(restaurant) %>
   <td><%= link_to "Edit", edit_restaurant_path(restaurant) %>
   <td>

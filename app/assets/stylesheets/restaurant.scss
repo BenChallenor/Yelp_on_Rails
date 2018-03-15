@@ -1,3 +1,44 @@
 // Place all the styles related to the Restaurant controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background: #283048;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #859398, #283048);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #859398, #283048);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: "Roboto";
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+// .listings {
+//   width: 50%;
+//   padding: 20px;
+//
+//   text-align: center;
+//   border: solid 5px;
+// }
+
+
+td,
+table {
+  margin: 0 auto;
+  border-radius: 5px solid white;
+  padding: 20px;
+  font-size: 20px;
+  background: pink;
+  opacity: 0.8;
+  text-align: center;
+  width: 20%;
+  border-bottom: 1px solid #ddd;
+}
