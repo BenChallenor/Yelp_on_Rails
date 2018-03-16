@@ -5,7 +5,7 @@ feature 'user can add review and see the review on the restaurants page' do
     visit("/restaurants/new")
     fill_in "restaurant[name]", with: "Flat iron"
     fill_in "restaurant[description]", with: "Steak house"
-    click_button "Save Restaurant"
+    click_button "Create Restaurant"
     click_link "Back to restaurant listings"
     click_link "Show"
     click_link "Add Review"
