@@ -1,4 +1,17 @@
 <%= form_with scope: :review, url: restaurant_reviews_path(@restaurant), local: true do |form| %>
+
+<% if @review.errors.any? %>
+ <div id="error_explanation">
+   <h2>
+    Oops! There's <%= pluralize(@review.errors.count, "error") %>! Please address the following:
+   </h2>
+   <ul>
+     <% @review.errors.full_messages.each do |msg| %>
+       <li><%= msg %></li>
+     <% end %>
+   </ul>
+ </div>
+<% end %>
   <p>
     <%= form.label :rating %><br>
     <%= form.number_field :rating %>
