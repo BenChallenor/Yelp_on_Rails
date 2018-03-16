@@ -1,10 +1,16 @@
 require File.join(File.dirname(__FILE__), 'views', 'restaurants', 'web_helpers.rb')
-
  # http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
+
+
+  # config.before :all do
+  # user = User.create email: 'test_user@gmail.com', password: '12345678', password_confirmation: '12345678'
+  # login_as user
+  # end
+
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
